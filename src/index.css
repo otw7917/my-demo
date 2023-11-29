@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* width */
+
+:root {
+  --header-height: 5rem;
+  --main-section-connect-color: beige;
+}
+
+@layer base {
+  h1 {
+    @apply text-3xl font-extrabold;
+  }
+
+  h2 {
+    @apply text-2xl font-bold;
+  }
+}
+
+@layer components {
+  .header-glassy {
+    /* @apply bg-opacity-70 backdrop-blur-md text-sm; */
+    opacity: 0.9;
+    backdrop-filter: blur(24px);
+    /* font-size: small; */
+  }
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.scroll-gallery-x::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-gallery-x {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
