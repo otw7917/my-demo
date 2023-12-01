@@ -4,18 +4,24 @@
 
 /* width */
 
+body {
+  background-color: var(--main-section-connect-color);
+  color: var(--main-text-color);
+}
+
 :root {
   --header-height: 5rem;
-  --main-section-connect-color: beige;
+  --main-section-connect-color: #121212;
+  --main-text-color: white;
 }
 
 @layer base {
   h1 {
-    @apply text-3xl font-extrabold;
+    @apply text-4xl font-extrabold;
   }
 
   h2 {
-    @apply text-2xl font-bold;
+    @apply text-3xl font-bold;
   }
 }
 
